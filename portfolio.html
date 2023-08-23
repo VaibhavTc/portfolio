@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vaibhav's Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100&family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@400;700&family=Roboto+Mono:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="brand">Vaibhav's Portfolio</div>
+      <div class="nav">
+        <div class="menu-right">
+          <span class="menu-icon" onclick="myFunction()">&#9776;</span>
+          <ul id="menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="home">
+      <div class="home1">
+        My Name is <span class="name">Vaibhav</span>
+        <div>And I work At BARC</div>
+        <div>as <span id="element"></span></div>
+      </div>
+      <div class="home2"><img src="barc logo.jpg" alt="" /></div>
+    </section>
+    <hr />
+    <section class="about">
+      <h1>About Me</h1>
+      <div class="about-elements">
+        <div class="flip-box about-content">
+          <div class="flip-box-inner myImage">
+            <div class="flip-box-front" style="border-radius: 2px">
+              <img
+                src="passphoto.jpg"
+                alt="Paris"
+                style="width: 300px; height: 200px"
+              />
+            </div>
+            <div class="flip-box-back">
+              <h2>BIO</h2>
+              <p>
+                My name is Vaibhav Chakole. I am a second year undergraduate
+                student of the department of chemistry.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="skills card about-content">
+          <h3>SKILLS</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+        <div class="interest about-content card">
+          <h3>Interest</h3>
+          <ul>
+            <li>Finance</li>
+            <li>Web Developement</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <section class="myPortfolio">
+      <h1>My Portfolio</h1>
+      <div class="portfolio-elements">
+        <div class="skills card about-content">
+          <h3>
+            <a
+              href="https://vaibhavtc.github.io/Flipkart_project/"
+              target="_blank"
+              >Flipkart Clone</a
+            >
+          </h3>
+        </div>
+        <div class="interest about-content card">
+          <h3>
+            <a href="https://vaibhavtc.github.io/SpotifyClone/" target="_blank"
+              >Spotify Clone</a
+            >
+          </h3>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <section class="contactMe">
+      <div class="contactMe-elements">
+        <div>
+          <h1>Contacts</h1>
+        </div>
+        <div class="contacts">
+          <div>
+            <a
+              href="https://www.instagram.com/vaibhav.chakole_/"
+              target="_blank"
+              ><img src="instagram logo.png" alt=""
+            /></a>
+          </div>
+          <div>
+            <a
+              href="https://www.linkedin.com/in/vaibhav-chakole-0309a825a/"
+              target="_blank"
+              ><img src="linkedin logo.png" alt=""
+            /></a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/Vaibhav1710/" target="_blank"
+              ><img src="facebook logo.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Portfolio</li>
+        <li>Contact</li>
+        <p>&copy; All rights reserved</p>
+      </ul>
+    </footer>
+    <script src="portfolio.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "web developer.",
+          "",
+          "web developer.",
+          "web developer.",
+          "",
+          "web developer.",
+          "web developer.",
+          "",
+          "web developer.",
+          "web developer.",
+          "",
+          "web developer.",
+        ],
+        typeSpeed: 75,
+      });
+    </script>
+    <script>
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 750) {
+          document.getElementById("menu").style.display = "inline-block";
+        } else {
+          document.getElementById("menu").style.display = "none";
+        }
+      });
+      function myFunction() {
+        const x = document.getElementById("menu");
+        console.log(x.style.display);
+        if (x.style.display == "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>

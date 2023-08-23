@@ -1,0 +1,390 @@
+body {
+    background-color: rgb(182, 252, 249);
+    color: rgb(53, 172, 150);
+    /* width: 100vw;
+    height: 100vh; */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(149, 227, 196);
+    align-items: center;
+
+
+}
+
+.brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(109, 95, 73);
+    background-color: rgb(149, 227, 196);
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+
+.nav {
+    background-color: rgb(149, 227, 196);
+    padding: 1rem;
+    display: flex;
+}
+
+.nav ul {
+    display: inline-block;
+}
+
+.nav ul li {
+    list-style: none;
+    margin: 24px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.menu-right {
+    text-align: right;
+}
+
+.menu-icon {
+    margin: 0 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+
+}
+
+@media only screen and (max-width:750px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav ul li {
+        display: block;
+    }
+
+    .nav ul {
+        display: none;
+
+    }
+}
+
+@media (min-width:750px) {
+    .nav ul li {
+        display: inline-block;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: rgb(53, 172, 150);
+    transition: .2s ease-in;
+}
+
+.nav ul li a:hover {
+    color: rgb(39, 125, 109);
+    font-weight: 700;
+}
+
+.home {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+    height: 500px;
+}
+
+.home1 {
+    width: 35%;
+    height: 80%;
+    font-size: 3vw;
+    margin: 9rem 2rem 1rem 6rem;
+}
+
+#element {
+    color: rgb(109, 95, 73);
+    font-weight: 550;
+}
+
+.name {
+    color: rgb(109, 95, 73);
+}
+
+.home2 {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home2 img {
+    width: 80%;
+    border-radius: 52px;
+    margin: 2rem 0 2rem 0;
+
+}
+
+hr {
+    border: 0;
+    background-color: rgb(109, 95, 73);
+    height: 2px;
+    margin: 10px 160px 10px 160px;
+}
+
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+    height: 50%;
+    flex-direction: column;
+}
+
+
+.about-elements {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    flex-direction: column;
+}
+
+.about-content h1 {
+    /* height: 10%; */
+    position: relative;
+    top: -20px;
+    padding-bottom: 1rem;
+}
+
+.myPortfolio h3 {
+    /* height: 10%; */
+    position: relative;
+    top: -20px;
+    padding-bottom: 1rem;
+}
+
+.about h1 {
+    margin: auto;
+    font-size: 2rem;
+    padding: 1rem 0 3rem 1rem;
+}
+
+
+.about .bio {
+    height: 150px;
+    width: 15rem;
+    background-color: rgb(255, 255, 255);
+    border: rgb(53, 172, 150) solid 2px;
+    box-shadow: 0px 8px 16px black;
+    padding: 2rem;
+    border-radius: 2rem;
+    transition: 0.3s;
+}
+
+.about .bio:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 8px 20px rgb(152, 50, 50);
+
+}
+
+.about .skills {
+    height: 150px;
+    width: 15rem;
+    background-color: white;
+    border: rgb(53, 172, 150) solid 2px;
+    box-shadow: 0px 8px 16px black;
+    padding: 2rem;
+    border-radius: 2rem;
+    transition: 0.3s;
+}
+
+.about .skills:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 8px 20px rgb(152, 50, 50);
+
+}
+
+.about .interest {
+    height: 150px;
+    width: 15rem;
+    background-color: white;
+    border: rgb(53, 172, 150) solid 2px;
+    box-shadow: 0px 8px 16px black;
+    padding: 2rem;
+    border-radius: 2rem;
+    transition: 0.3s;
+    /* margin: ; */
+}
+
+.about .interest:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 8px 20px rgb(152, 50, 50);
+
+}
+
+.myImage {
+    height: 150px;
+    width: 15rem;
+}
+
+.myImage img {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 6px;
+    box-shadow: 0px 8px 16px black;
+}
+
+.flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    perspective: 1000px;
+    transition: 1s;
+}
+
+.flip-box:hover {
+    border: rgb(53, 172, 150) solid 2px;
+    transform: scale(1.01);
+    box-shadow: 0px 8px 20px rgb(152, 50, 50);
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border-radius: 10px;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front,
+.flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+/* Style the back side */
+.flip-box-back {
+    background-color: white;
+    color: rgb(53, 172, 150);
+    border-radius: 10px;
+    transform: rotateY(180deg);
+}
+
+.myPortfolio {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+    height: 50%;
+    flex-direction: column;
+}
+
+.portfolio-elements {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contactMe-elements {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.myPortfolio h1 {
+    margin: auto;
+    font-size: 2rem;
+    padding: 1rem 0 3rem 1rem;
+}
+
+.myPortfolio h3 a:hover {
+    transform: 1.02;
+    color: rgb(2, 107, 60);
+}
+
+
+.contactMe-elements {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contactMe h1 {
+    margin: auto;
+    font-size: 2rem;
+    padding: 0.5rem 0 1rem 1rem;
+}
+
+.contacts div {
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+}
+
+.contactMe-elements div img {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+footer {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    background-color: black;
+    width: 100%;
+    height: 250px;
+    color: rgb(53, 172, 150);
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul li {
+    margin: auto;
+    cursor: pointer;
+    list-style: none;
+    margin: 5px 0;
+}
